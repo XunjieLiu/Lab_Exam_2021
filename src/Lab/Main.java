@@ -28,5 +28,8 @@ public class Main {
         for (GameCharacter c : ch) {
             System.out.println(c.toString());
         }
+
+        System.out.println(Arrays.asList(charArray));
+        System.out.println(charSet);
     }
 }
