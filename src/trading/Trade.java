@@ -43,9 +43,9 @@ public class Trade{
     @Override
     public String toString() {
         return gems +
-                " gems for" + amount +
+                " gems for " + amount +
                 " " + goods +
-                '}';
+                '.';
     }
 
     public void execute(Trader trader, Citizen citizen) throws IllegalArgumentException{

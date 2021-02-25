@@ -11,6 +11,7 @@ public class Trader {
     public Trader() {
         this.trades = new ArrayList<Trade>();
         this.random = new Random();
+        addRandomTrade();
     }
 
     public List<Trade> getTrades() {
@@ -34,5 +35,16 @@ public class Trader {
         int rand_int = random.nextInt(goods.length);
 
         return goods[rand_int];
+    }
+
+    @Override
+    public String toString() {
+        ArrayList<String> result = new ArrayList<String>();
+
+        for(Trade t: this.trades){
+            result.add(t.toString());
+        }
+
+        return result.toString();
     }
 }
